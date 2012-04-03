@@ -1,0 +1,29 @@
+This code is intended for the UVic AERO project. They were 
+quickly hacked together from OpenCV tutorials to identify 
+a predefined set of geometric shapes, QR codes, and vehicles
+for an autonomous aerial vehicle.
+
+While this sentence resides, this code is messy and should not be used for anything else.
+
+Warning: None of these demos will work in the field unless we built a 
+decent training dataset. That should be done as soon as possible. The 
+competition is mere months away. 
+
+To run the demos:
+1. install OpenCV, using [1] but substituting steps #1-3 of [2] for step #2 of [1].
+2. Run:
+	cd demo-truck;
+	./detectofplanarobjects ./truck_cropped.jpg ./truck_in_field.jpg
+	cd ..;
+	cd demo-circle-square;
+	./aero-image-analyzer ./shapes.jpg
+	cd ..;
+3. Review the source code, and get an idea of how to interact with these functions
+in OpenCV. They are quick, dirty, and with an appropriate training dataset to
+figure out reasonable parameters, they might even do the job AERO needs them to.
+If not, there's always more science-maigc in the OpenCV toolkit to scavenge from.
+
+References:
+[1] : http://thebitbangtheory.wordpress.com/2011/10/23/how-to-install-opencv-2-3-1-in-ubuntu-11-10-oneiric-ocelot-with-python-support/
+[2] : http://www.ozbotz.org/opencv-installation/
+
